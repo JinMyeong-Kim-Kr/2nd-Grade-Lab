@@ -14,3 +14,6 @@
   인덱스 root에서부터 시작하는 subtree를 max heap 상태를 만족하도록 변경한다.
   Change the subtree starting from the index root to satisfy the maxheap state.
  
+ ## void Sort
+  initialization을 수행한 후 max heap 상태의 배열을 이용하여 정렬을 수행한다. 
+  After initialization, the alignment is performed using an array of maxheap states.
