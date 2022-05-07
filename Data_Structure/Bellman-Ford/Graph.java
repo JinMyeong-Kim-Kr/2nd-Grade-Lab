@@ -1,10 +1,3 @@
-// Lab 006	:  Bellman Ford
-// Name :
-// Student ID :
-
-import java.util.*;
-
-
 class Graph {
 	int numofnodes;  // the number of nodes in the graph
 	private int[][] CostAdj; // Adjacency matrix
@@ -58,7 +51,6 @@ class Graph {
 
 
 	void Edge(int v1, int v2, int cost) { 
-		// NEED TO IMPLEMENT
 		CostAdj[v1][v2] = cost;
 	}
 
@@ -77,14 +69,14 @@ class Graph {
 	}
 
 	void BellmanFord(int v) {
-		p[v] = -1; //v가 시작점 이므로
+		p[v] = -1; // v is start point.
 		
 		for(int k = 0; k < dist.length ;k++){
 			dist[k] = LargeCost;
 		}
 		dist[0] = 0;
 		//dist = [0,-,-,-,-]
-		for(int t = 0; t < numofnodes; t++) { //Negative Cycle check
+		for(int t = 0; t < numofnodes; t++) { // Negative Cycle check
 		for(int k = 0; k < numofnodes; k++){
 			for(int i = 1; i < numofnodes; i++){
 				if(dist[i] > dist[k] + CostAdj[k][i]){
@@ -92,15 +84,10 @@ class Graph {
 					p[i] = k;
 				}
 				
-				
-
 			}
 		}
 
-		}
-		
-			
-			
+		}		
 
 		}
 	}

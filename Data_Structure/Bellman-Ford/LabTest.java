@@ -1,7 +1,3 @@
-// Lab 006	: 
-// Name :
-// Student ID :
-
 import java.util.*;
 
 class LabTest {
